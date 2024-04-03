@@ -1,0 +1,18 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="J56C*|rUI9rneXdbMgaE">mySprite</variable><variable type="KIND_SpriteKind" id="cLkI[Oc=Qg!;R`0(}3*D">Player</variable><variable type="KIND_SpriteKind" id="J9D^_nQ3?kWzRb^nTRSO">Projectile</variable><variable type="KIND_SpriteKind" id="dQPk^vXD`|QDu4j/-_[P">Food</variable><variable type="KIND_SpriteKind" id="poxl0T%4XWGJ|uig,_eP">Enemy</variable></variables><block type="pxt-on-start" id="`k3$1^[pG;:@W{?jq5U[" x="0" y="0"><statement name="HANDLER"><block type="gamecountdown" id="Vra}*AMQ)Y?/YVi$Y(h`"><value name="duration"><shadow type="math_number" id="aQk%zd*?}Xp^I5|1PIN_"><field name="NUM">10</field></shadow></value><next><block type="hudsetScore" id="6J^)l:=Vcn8Rgi!v{6g="><value name="value"><shadow type="math_number" id="lr%o4(LMt86dff^O_^{S"><field name="NUM">0</field></shadow></value><next><block type="gamesetbackgroundcolor" id="Z7:n;~c_,HkqyLDLzakf"><value name="color"><shadow type="colorindexpicker" id="~Iag1~x`~6u*l%-e}yaL"><field name="index">1</field></shadow></value><next><block type="variables_set" id="o*us5r?PTO-pU%H@rKGR"><field name="VAR" id="J56C*|rUI9rneXdbMgaE">mySprite</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="#ODsEU{kvnJ,M)]6!u%("><value name="img"><shadow type="screen_image_picker" id="J58(hn;D-fCw*WXYdBT_"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . 8 8 8 8 8 8 8 8 8 8 . . . . 
+. 8 8 8 8 8 8 8 8 8 8 8 8 . . . 
+. 8 8 8 8 8 8 8 8 8 8 8 8 . . . 
+. 8 8 8 8 8 8 8 8 8 8 8 8 . . . 
+. 8 8 8 8 8 8 8 8 8 8 8 8 . . . 
+. 8 8 8 8 8 8 8 8 8 8 8 8 . . . 
+. 6 8 8 8 8 8 8 8 8 8 8 8 . . . 
+. 6 6 8 8 8 8 8 8 8 8 8 8 . . . 
+. 6 6 6 6 6 6 6 6 6 6 6 6 . . . 
+. . 6 6 6 6 6 6 6 6 6 6 . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"J58(hn;D-fCw*WXYdBT_"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="DiJ[%!X_v~FH@G1|v(*w"><field name="MEMBER">Player</field></shadow></value></block></value></block></next></block></next></block></next></block></statement></block><block type="keyonevent" id="/W-u69M6Ul5m|2ygWINo" x="130" y="430"><field name="button">controller.A</field><field name="event">ControllerButtonEvent.Pressed</field><statement name="HANDLER"><block type="music_playable_play" id="C)s6L]`2k@ciCk^9-$cx"><field name="playbackMode">music.PlaybackMode.UntilDone</field><value name="toPlay"><shadow type="music_melody_playable" id="2Dd.x):oo*kw`lx7korU"><field name="melody">music.thump</field></shadow></value><next><block type="hudChangeScoreBy" id="QW4T:Rp3)1/_M(dE4`y5"><value name="value"><shadow type="math_number" id="C?VR!#Vt$6vA*V0xF[#Z"><field name="NUM">1</field></shadow></value></block></next></block></statement></block><block type="gamecountdownevent" id="L8/{0d@8{~Ii!aN7xzAT" x="630" y="450"><statement name="HANDLER"><block type="game_setgameoverscoringtype" id="E%mealH5d{U}LNHlIdgb"><field name="type">game.ScoringType.HighScore</field><next><block type="gameOver2" id="}`9IGH1m?~TX#9bV)|7_"><value name="win"><shadow type="toggleWinLose" id="TP@bt6~0aB8`DIv|15t$"><field name="win">true</field></shadow></value></block></next></block></statement></block></xml>
